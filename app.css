@@ -69,29 +69,31 @@ input, textarea, select {
   src: url(fonts/jost-book.woff2), url(fonts/jost-book.woff);
 }
 body {
-  background-color: #ca774a;
   color: #fff;
   font-family: "Jost";
   line-height: 1.5;
   font-size: 24px;
   height: 100vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+}
+@media (max-width: 800px) {
+  body {
+    background-color: yellow;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    background-color: green;
+  }
 }
 
 section {
-  width: 500px;
-}
-@media (max-width: 600px) {
-  section {
-    width: 350px;
-    font-size: 16px;
-  }
+  background-color: #fff;
+  color: #f70201;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 section p {
   margin: 24px 0 0 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /*# sourceMappingURL=app.css.map */
